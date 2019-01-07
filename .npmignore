@@ -1,0 +1,8 @@
+scripts/
+tests/
+.nyc_output/
+coverage/
+.eslintignore
+.eslintrc.js
+.travis.yml
+**/unsupports.md
