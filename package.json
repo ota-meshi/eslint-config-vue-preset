@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-vue-preset",
   "version": "0.0.5",
-  "description": "Provides various shareable configs for eslint-plugin-vue.",
+  "description": "Provides various ESLint Shareable Configs for eslint-plugin-vue.",
   "main": "lib/index.js",
   "scripts": {
     "pretest": "npm run lint",
@@ -41,6 +41,7 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-google": "^0.11.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-vue": "^2.0.2",

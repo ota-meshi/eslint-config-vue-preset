@@ -22,5 +22,6 @@ writeConfig("vue/strongly-recommended-e")
 // ruleset for Vue template
 writeConfig("standard")
 writeConfig("airbnb")
+writeConfig("google")
 writeConfig("eslint:recommended")
 writeConfig("eslint:all")

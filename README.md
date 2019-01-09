@@ -9,7 +9,7 @@
 [![Build Status](https://travis-ci.org/ota-meshi/eslint-config-vue-preset.svg?branch=master)](https://travis-ci.org/ota-meshi/eslint-config-vue-preset)
 [![Coverage Status](https://coveralls.io/repos/github/ota-meshi/eslint-config-vue-preset/badge.svg?branch=master)](https://coveralls.io/github/ota-meshi/eslint-config-vue-preset?branch=master)
 
-Provides various shareable configs for [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue).
+Provides various ESLint Shareable Configs for [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue).
 
 ## WORK IN PROGRESS
 
@@ -66,19 +66,9 @@ It is ruleset that changed the setting of rules provided by [`"plugin:vue/strong
 
 <!--
 
-### `vue-preset/standard`
-
-The ruleset of `"standard"` for Vue template.
-
-```js
-{
-  "extends": "vue-preset/standard"
-}
-```
-
 ### `vue-preset/airbnb`
 
-The ruleset of `"airbnb"` for Vue template.
+The ruleset of [`"airbnb"`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) for Vue template.
 
 ```js
 {
@@ -86,9 +76,29 @@ The ruleset of `"airbnb"` for Vue template.
 }
 ```
 
+### `vue-preset/standard`
+
+The ruleset of [`"standard"`](https://github.com/standard/eslint-config-standard) for Vue template.
+
+```js
+{
+  "extends": "vue-preset/standard"
+}
+```
+
+### `vue-preset/google`
+
+The ruleset of [`"google"`](https://github.com/google/eslint-config-google) for Vue template.
+
+```js
+{
+  "extends": "vue-preset/google"
+}
+```
+
 ### `vue-preset/eslint:recommended`
 
-The ruleset of `"eslint:recommende"` for Vue template.
+The ruleset of [`"eslint:recommended"`](https://eslint.org/docs/user-guide/configuring#using-eslintrecommended) for Vue template.
 
 ```js
 {
@@ -97,3 +107,7 @@ The ruleset of `"eslint:recommende"` for Vue template.
 ```
 
 -->
+
+## License
+
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
