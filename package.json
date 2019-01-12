@@ -10,7 +10,7 @@
     "build": "node scripts/build-fallback-configs.js && npm run lint-fix",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "upgrade": "npm i -D eslint@latest eslint-plugin-vue@latest eslint-config-airbnb@latest eslint-config-standard@latest eslint-config-vue@latest",
+    "upgrade": "npm i -D eslint@latest eslint-plugin-vue@latest eslint-config-airbnb@latest eslint-config-standard@latest eslint-plugin-vue-libs@latest",
     "check-unsupport-rules": "node scripts/check-unsupport-rules"
   },
   "repository": {
@@ -44,13 +44,13 @@
     "eslint-config-google": "^0.11.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-config-standard": "^12.0.0",
-    "eslint-config-vue": "^2.0.2",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.3",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.1.0",
+    "eslint-plugin-vue-libs": "^3.0.0",
     "fs-extra": "^7.0.1",
     "glob": "^7.1.3",
     "mocha": "^5.2.0",
