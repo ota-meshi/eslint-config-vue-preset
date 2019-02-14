@@ -48,9 +48,12 @@ module.exports = {
 
 It is ruleset that changed the setting of rules provided by [`"plugin:vue/recommended"`](https://eslint.vuejs.org/rules/#priority-c-recommended-minimizing-arbitrary-choices-and-cognitive-overhead) to `"error"`.
 
-```js
+```diff
 {
-  "extends": "vue-preset/vue/recommended-e"
+  "extends": [
+    "plugin:vue/base",
++    "vue-preset/vue/recommended-e"
+  ]
 }
 ```
 
@@ -58,31 +61,44 @@ It is ruleset that changed the setting of rules provided by [`"plugin:vue/recomm
 
 It is ruleset that changed the setting of rules provided by [`"plugin:vue/strongly-recommended"`](https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability) to `"error"`.
 
-```js
+```diff
 {
-  "extends": "vue-preset/vue/strongly-recommended-e"
+  "extends": [
+    "plugin:vue/base",
++    "vue-preset/vue/strongly-recommended-e"
+  ]
 }
 ```
-
-<!--
 
 ### `vue-preset/airbnb`
 
 The ruleset of [`"airbnb"`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) for Vue template.
 
-```js
+```diff
 {
-  "extends": "vue-preset/airbnb"
+  "extends": [
+    // `eslint-config-airbnb` ruleset
+    "airbnb",
+    // Apply the same rules to expressions in templates.
++   "vue-preset/airbnb"
+  ]
 }
 ```
 
 ### `vue-preset/standard`
 
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
+
 The ruleset of [`"standard"`](https://github.com/standard/eslint-config-standard) for Vue template.
 
-```js
+```diff
 {
-  "extends": "vue-preset/standard"
+  "extends": [
+    // `eslint-config-standard` ruleset
+    "standard",
+    // Apply the same rules to expressions in templates.
++   "vue-preset/standard"
+  ]
 }
 ```
 
@@ -90,9 +106,14 @@ The ruleset of [`"standard"`](https://github.com/standard/eslint-config-standard
 
 The ruleset of [`"google"`](https://github.com/google/eslint-config-google) for Vue template.
 
-```js
+```diff
 {
-  "extends": "vue-preset/google"
+  "extends": [
+    // `eslint-config-google` ruleset
+    "google",
+    // Apply the same rules to expressions in templates.
++   "vue-preset/google"
+  ]
 }
 ```
 
@@ -100,13 +121,16 @@ The ruleset of [`"google"`](https://github.com/google/eslint-config-google) for 
 
 The ruleset of [`"eslint:recommended"`](https://eslint.org/docs/user-guide/configuring#using-eslintrecommended) for Vue template.
 
-```js
+```diff
 {
-  "extends": "vue-preset/eslint:recommended"
+  "extends": [
+    // eslint recommended ruleset
+    "eslint:recommended",
+    // Apply the same rules to expressions in templates.
++   "vue-preset/eslint:recommended"
+  ]
 }
 ```
-
--->
 
 ## License
 

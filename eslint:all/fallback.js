@@ -10,7 +10,6 @@ module.exports = {
         "vue/comma-dangle": "error",
         "vue/eqeqeq": "error",
         "vue/key-spacing": "error",
-        "vue/no-dupe-keys": "error",
         "vue/no-multi-spaces": "error",
         "vue/no-restricted-syntax": "error",
         "vue/no-unused-vars": "error",

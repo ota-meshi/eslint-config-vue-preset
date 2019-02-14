@@ -47,7 +47,6 @@ module.exports = {
                 afterColon: true,
             },
         ],
-        "vue/no-dupe-keys": "error",
         "vue/no-multi-spaces": "error",
         "vue/no-unused-vars": "error",
         "vue/object-curly-spacing": ["error", "always"],

@@ -10,7 +10,6 @@ module.exports = {
             },
         ],
         "vue/no-multi-spaces": "error",
-        "vue/no-dupe-keys": "error",
         "vue/array-bracket-spacing": ["error", "never"],
         "vue/block-spacing": ["error", "always"],
         "vue/brace-style": [
