@@ -11,10 +11,6 @@
 
 Provides various ESLint Shareable Configs for [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue).
 
-## WORK IN PROGRESS
-
-Please note that this repo is currently in alpha stage and still under active development.
-
 ## :cd: Installation
 
 ```bash
