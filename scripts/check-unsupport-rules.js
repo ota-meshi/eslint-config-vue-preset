@@ -29,22 +29,15 @@ const DONT_SUPPORT_RULES = {
 
 const WIP = [
     // WIP
-    "array-bracket-spacing",
-    "arrow-spacing",
-    "block-spacing",
-    "brace-style",
-    "camelcase",
-    "comma-dangle",
     "comma-spacing",
     "dot-location",
-    "eqeqeq",
-    "key-spacing",
     "keyword-spacing",
     "no-empty-pattern",
-    "no-restricted-syntax",
-    "object-curly-spacing",
-    "space-unary-ops",
 ]
+
+// cannot wrap
+// no-extra-boolean-cast
+// no-extra-parens
 
 function rulesToMd(rules) {
     return Object.keys(rules)
