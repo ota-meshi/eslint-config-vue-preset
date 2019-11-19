@@ -7,6 +7,7 @@
     "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
     "test": "npm run upgrade && nyc --reporter=lcov npm run test:base -- --timeout 60000",
+    "debug": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot --timeout 60000",
     "build": "node scripts/build-fallback-configs.js && npm run lint-fix",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",

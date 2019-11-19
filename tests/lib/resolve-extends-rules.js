@@ -31,8 +31,20 @@ describe("resolve-extends-rules", () => {
                 resolveExtendsRules({ extends: "plugin:@mysticatea/es2015" }),
                 Object.assign(
                     {},
-                    require("@mysticatea/eslint-plugin").configs.es5.rules,
-                    require("@mysticatea/eslint-plugin").configs.es2015.rules
+                    require("@mysticatea/eslint-plugin/lib/configs/_base")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-ts")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-vue")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-mocha")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-special")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_base")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-2015")
+                        .rules
                 )
             )
         })
@@ -75,8 +87,20 @@ describe("resolve-extends-rules", () => {
 
                 Object.assign(
                     {},
-                    require("@mysticatea/eslint-plugin").configs.es5.rules,
-                    require("@mysticatea/eslint-plugin").configs.es2015.rules
+                    require("@mysticatea/eslint-plugin/lib/configs/_base")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-ts")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-vue")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-mocha")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-special")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_base")
+                        .rules,
+                    require("@mysticatea/eslint-plugin/lib/configs/_override-2015")
+                        .rules
                 )
             )
         })
