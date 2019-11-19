@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/ota-meshi/eslint-config-vue-preset#readme",
   "engines": {
-    "node": ">=6.5"
+    "node": ">=8"
   },
   "peerDependencies": {
     "eslint": "^6.6.0",
