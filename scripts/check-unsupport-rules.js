@@ -3,7 +3,7 @@
 const fs = require("fs-extra")
 const path = require("path")
 const buildVueRules = require("../lib/build-vue-rules")
-const eslintRules = new (require("eslint")).Linter().rules
+const eslintRules = new (require("eslint").Linter)().getRules()
 
 const DONT_SUPPORT_RULES = {
     // `html-indent` and `script-indent`
@@ -29,10 +29,10 @@ const DONT_SUPPORT_RULES = {
 
 const WIP = [
     // WIP
-    "comma-spacing",
-    "dot-location",
-    "keyword-spacing",
-    "no-empty-pattern",
+    // "comma-spacing",
+    // "dot-location",
+    // "keyword-spacing",
+    // "no-empty-pattern",
 ]
 
 // cannot wrap
@@ -43,9 +43,7 @@ function rulesToMd(rules) {
     return Object.keys(rules)
         .map(rule => {
             if (DONT_SUPPORT_RULES[rule]) {
-                return `- [${rule}](https://eslint.org/docs/rules/${rule}) ... ${
-                    DONT_SUPPORT_RULES[rule]
-                }`
+                return `- [${rule}](https://eslint.org/docs/rules/${rule}) ... ${DONT_SUPPORT_RULES[rule]}`
             }
             return `- [${
                 WIP.includes(rule) ? "X" : " "

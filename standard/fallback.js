@@ -2,6 +2,7 @@
 
 module.exports = {
     rules: {
+        "vue/array-bracket-spacing": ["error", "never"],
         "vue/arrow-spacing": [
             "error",
             {
@@ -33,6 +34,7 @@ module.exports = {
                 functions: "never",
             },
         ],
+        "vue/dot-location": ["error", "property"],
         "vue/eqeqeq": [
             "error",
             "always",
@@ -47,6 +49,14 @@ module.exports = {
                 afterColon: true,
             },
         ],
+        "vue/keyword-spacing": [
+            "error",
+            {
+                before: true,
+                after: true,
+            },
+        ],
+        "vue/no-empty-pattern": "error",
         "vue/no-multi-spaces": "error",
         "vue/no-unused-vars": "error",
         "vue/object-curly-spacing": ["error", "always"],

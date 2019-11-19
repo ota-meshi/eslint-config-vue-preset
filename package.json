@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vue-preset",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Provides various ESLint Shareable Configs for eslint-plugin-vue.",
   "main": "lib/index.js",
   "scripts": {
@@ -33,27 +33,27 @@
     "node": ">=6.5"
   },
   "peerDependencies": {
-    "eslint": "^5.0.0",
-    "eslint-plugin-vue": "^5.1.0"
+    "eslint": "^6.6.0",
+    "eslint-plugin-vue": "^6.0.1"
   },
   "devDependencies": {
-    "@mysticatea/eslint-plugin": "^8.0.1",
-    "@vue/eslint-config-standard": "^4.0.0",
-    "eslint": "^5.13.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-google": "^0.11.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.12.3",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^5.2.1",
-    "eslint-plugin-vue-libs": "^3.0.0",
-    "fs-extra": "^7.0.1",
-    "glob": "^7.1.3",
-    "mocha": "^5.2.0",
-    "nyc": "^13.2.0"
+    "@mysticatea/eslint-plugin": "^13.0.0",
+    "@vue/eslint-config-standard": "^5.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "eslint-plugin-vue-libs": "^4.0.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
   }
 }

@@ -15,6 +15,7 @@ module.exports = {
         ],
         "vue/comma-dangle": [2, "always-multiline"],
         "vue/key-spacing": 2,
+        "vue/keyword-spacing": 2,
         "vue/object-curly-spacing": 2,
     },
 }
