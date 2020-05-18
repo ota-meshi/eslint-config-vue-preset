@@ -10,6 +10,8 @@ matrix:
 
 before_install:
   - if [ "$ESLINT" = "6" ]; then npm i -S eslint@6; fi
+
+before_script:
   - if [ "$CI" = "true" ]; then npm run lint; fi
 
 deploy:
