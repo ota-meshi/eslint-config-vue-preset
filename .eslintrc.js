@@ -1,13 +1,10 @@
 "use strict"
 
 module.exports = {
-    extends: [
-        "plugin:@mysticatea/es2015",
-        "plugin:@mysticatea/+node",
-    ],
+    extends: ["plugin:@mysticatea/es2015", "plugin:@mysticatea/+node"],
 
     rules: {
-        "no-loop-func": "off"
+        "no-loop-func": "off",
     },
 
     overrides: [
