@@ -57,6 +57,7 @@ module.exports = {
             },
         ],
         "vue/no-empty-pattern": "error",
+        "vue/no-irregular-whitespace": "error",
         "vue/no-multi-spaces": "error",
         "vue/no-unused-vars": "error",
         "vue/object-curly-spacing": ["error", "always"],
