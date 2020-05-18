@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vue-preset",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Provides various ESLint Shareable Configs for eslint-plugin-vue.",
   "main": "lib/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
   },
   "peerDependencies": {
     "eslint": ">=6.8.0",
-    "eslint-plugin-vue": ">=6.2.2"
+    "eslint-plugin-vue": ">=6.2.2 || ^7.0.0-alpha.3"
   },
   "devDependencies": {
     "@mysticatea/eslint-plugin": "^13.0.0",
