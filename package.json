@@ -4,7 +4,6 @@
   "description": "Provides various ESLint Shareable Configs for eslint-plugin-vue.",
   "main": "lib/index.js",
   "scripts": {
-    "pretest": "npm run lint",
     "test:base": "mocha \"tests/**/*.js\" --reporter dot",
     "test": "npm run upgrade && nyc --reporter=lcov npm run test:base -- --timeout 60000",
     "debug": "mocha --inspect --debug-brk \"tests/**/*.js\" --reporter dot --timeout 60000",
