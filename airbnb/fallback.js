@@ -12,6 +12,7 @@ module.exports = {
         ],
         "vue/no-empty-pattern": "error",
         "vue/no-multi-spaces": "error",
+        "vue/no-irregular-whitespace": "error",
         "vue/array-bracket-spacing": ["error", "never"],
         "vue/block-spacing": ["error", "always"],
         "vue/brace-style": [
@@ -63,6 +64,18 @@ module.exports = {
                 },
             },
         ],
+        "vue/max-len": [
+            "error",
+            100,
+            2,
+            {
+                ignoreUrls: true,
+                ignoreComments: false,
+                ignoreRegExpLiterals: true,
+                ignoreStrings: true,
+                ignoreTemplateLiterals: true,
+            },
+        ],
         "vue/no-restricted-syntax": [
             "error",
             {
@@ -87,6 +100,14 @@ module.exports = {
             },
         ],
         "vue/object-curly-spacing": ["error", "always"],
+        "vue/sort-keys": [
+            "off",
+            "asc",
+            {
+                caseSensitive: false,
+                natural: true,
+            },
+        ],
         "vue/space-infix-ops": "error",
         "vue/space-unary-ops": [
             "error",
