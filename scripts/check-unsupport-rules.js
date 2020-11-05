@@ -41,7 +41,7 @@ const WIP = [
 
 function rulesToMd(rules) {
     return Object.keys(rules)
-        .map(rule => {
+        .map((rule) => {
             if (DONT_SUPPORT_RULES[rule]) {
                 return `- [${rule}](https://eslint.org/docs/rules/${rule}) ... ${DONT_SUPPORT_RULES[rule]}`
             }
@@ -179,13 +179,13 @@ ${rulesToJson(whitespaceRules(unsupports))}
 ${rulesToJson(highPriorityRules(unsupports))}
 
 `,
-        "utf8"
+        "utf8",
     )
 }
 
-checkConfig("eslint/conf/eslint-all", "eslint:all")
-checkConfig("eslint/conf/eslint-recommended", "eslint:recommended")
+checkConfig("eslint/conf/eslint-all", "eslint/all")
+checkConfig("eslint/conf/eslint-recommended", "eslint/recommended")
 checkConfig("eslint-config-airbnb", "airbnb")
 checkConfig("eslint-config-standard", "standard")
 checkConfig("eslint-config-google", "google")
-checkConfig("eslint-plugin-vue-libs/config", "plugin:vue-libs/recommended")
+checkConfig("eslint-plugin-vue-libs/config", "plugin/vue-libs/recommended")

@@ -2,6 +2,12 @@
 
 module.exports = {
     rules: {
+        "vue/dot-notation": [
+            "error",
+            {
+                allowKeywords: true,
+            },
+        ],
         "vue/dot-location": ["error", "property"],
         "vue/eqeqeq": [
             "error",
@@ -12,7 +18,9 @@ module.exports = {
         ],
         "vue/no-empty-pattern": "error",
         "vue/no-multi-spaces": "error",
+        "vue/no-useless-concat": "error",
         "vue/no-irregular-whitespace": "error",
+        "vue/no-sparse-arrays": "error",
         "vue/array-bracket-spacing": ["error", "never"],
         "vue/block-spacing": ["error", "always"],
         "vue/brace-style": [
@@ -39,6 +47,33 @@ module.exports = {
                 functions: "always-multiline",
             },
         ],
+        "vue/comma-spacing": [
+            "error",
+            {
+                before: false,
+                after: true,
+            },
+        ],
+        "vue/comma-style": [
+            "error",
+            "last",
+            {
+                exceptions: {
+                    ArrayExpression: false,
+                    ArrayPattern: false,
+                    ArrowFunctionExpression: false,
+                    CallExpression: false,
+                    FunctionDeclaration: false,
+                    FunctionExpression: false,
+                    ImportDeclaration: false,
+                    ObjectExpression: false,
+                    ObjectPattern: false,
+                    VariableDeclaration: false,
+                    NewExpression: false,
+                },
+            },
+        ],
+        "vue/func-call-spacing": ["error", "never"],
         "vue/key-spacing": [
             "error",
             {
@@ -100,14 +135,47 @@ module.exports = {
             },
         ],
         "vue/object-curly-spacing": ["error", "always"],
-        "vue/sort-keys": [
-            "off",
-            "asc",
+        "vue/object-curly-newline": [
+            "error",
             {
-                caseSensitive: false,
-                natural: true,
+                ObjectExpression: {
+                    minProperties: 4,
+                    multiline: true,
+                    consistent: true,
+                },
+                ObjectPattern: {
+                    minProperties: 4,
+                    multiline: true,
+                    consistent: true,
+                },
+                ImportDeclaration: {
+                    minProperties: 4,
+                    multiline: true,
+                    consistent: true,
+                },
+                ExportDeclaration: {
+                    minProperties: 4,
+                    multiline: true,
+                    consistent: true,
+                },
             },
         ],
+        "vue/object-property-newline": [
+            "error",
+            {
+                allowAllPropertiesOnSameLine: true,
+            },
+        ],
+        "vue/operator-linebreak": [
+            "error",
+            "before",
+            {
+                overrides: {
+                    "=": "none",
+                },
+            },
+        ],
+        "vue/space-in-parens": ["error", "never"],
         "vue/space-infix-ops": "error",
         "vue/space-unary-ops": [
             "error",
@@ -125,5 +193,7 @@ module.exports = {
                 after: true,
             },
         ],
+        "vue/prefer-template": "error",
+        "vue/template-curly-spacing": "error",
     },
 }

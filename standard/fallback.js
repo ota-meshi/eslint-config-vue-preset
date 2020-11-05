@@ -21,7 +21,9 @@ module.exports = {
         "vue/camelcase": [
             "error",
             {
+                allow: ["^UNSAFE_"],
                 properties: "never",
+                ignoreGlobals: true,
             },
         ],
         "vue/comma-dangle": [
@@ -34,7 +36,21 @@ module.exports = {
                 functions: "never",
             },
         ],
+        "vue/comma-spacing": [
+            "error",
+            {
+                before: false,
+                after: true,
+            },
+        ],
+        "vue/comma-style": ["error", "last"],
         "vue/dot-location": ["error", "property"],
+        "vue/dot-notation": [
+            "error",
+            {
+                allowKeywords: true,
+            },
+        ],
         "vue/eqeqeq": [
             "error",
             "always",
@@ -42,6 +58,7 @@ module.exports = {
                 null: "ignore",
             },
         ],
+        "vue/func-call-spacing": ["error", "never"],
         "vue/key-spacing": [
             "error",
             {
@@ -57,10 +74,37 @@ module.exports = {
             },
         ],
         "vue/no-empty-pattern": "error",
+        "vue/no-extra-parens": ["error", "functions"],
         "vue/no-irregular-whitespace": "error",
         "vue/no-multi-spaces": "error",
+        "vue/no-sparse-arrays": "error",
         "vue/no-unused-vars": "error",
+        "vue/object-curly-newline": [
+            "error",
+            {
+                multiline: true,
+                consistent: true,
+            },
+        ],
         "vue/object-curly-spacing": ["error", "always"],
+        "vue/object-property-newline": [
+            "error",
+            {
+                allowMultiplePropertiesPerLine: true,
+            },
+        ],
+        "vue/operator-linebreak": [
+            "error",
+            "after",
+            {
+                overrides: {
+                    "?": "before",
+                    ":": "before",
+                    "|>": "before",
+                },
+            },
+        ],
+        "vue/space-in-parens": ["error", "never"],
         "vue/space-infix-ops": "error",
         "vue/space-unary-ops": [
             "error",
@@ -69,5 +113,6 @@ module.exports = {
                 nonwords: false,
             },
         ],
+        "vue/template-curly-spacing": ["error", "never"],
     },
 }

@@ -11,7 +11,7 @@ function writeConfig(name) {
         `"use strict"
 
 module.exports = ${JSON.stringify(require(dir), null, 4)}`,
-        "utf8"
+        "utf8",
     )
 }
 
@@ -23,5 +23,5 @@ writeConfig("vue/strongly-recommended-e")
 writeConfig("standard")
 writeConfig("airbnb")
 writeConfig("google")
-writeConfig("eslint:recommended")
-writeConfig("eslint:all")
+writeConfig("eslint/recommended")
+writeConfig("eslint/all")

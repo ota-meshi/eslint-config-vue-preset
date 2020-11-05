@@ -15,6 +15,9 @@ module.exports = {
             },
         ],
         "vue/comma-dangle": [2, "always-multiline"],
+        "vue/comma-spacing": 2,
+        "vue/comma-style": 2,
+        "vue/func-call-spacing": 2,
         "vue/key-spacing": 2,
         "vue/keyword-spacing": 2,
         "vue/max-len": [
@@ -27,5 +30,6 @@ module.exports = {
             },
         ],
         "vue/object-curly-spacing": 2,
+        "vue/operator-linebreak": [2, "after"],
     },
 }

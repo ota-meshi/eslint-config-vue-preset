@@ -113,7 +113,7 @@ The ruleset of [`"google"`](https://github.com/google/eslint-config-google) for 
 }
 ```
 
-### `vue-preset/eslint:recommended`
+### `vue-preset/eslint/recommended`
 
 The ruleset of [`"eslint:recommended"`](https://eslint.org/docs/user-guide/configuring#using-eslintrecommended) for Vue template.
 
@@ -123,7 +123,7 @@ The ruleset of [`"eslint:recommended"`](https://eslint.org/docs/user-guide/confi
     // eslint recommended ruleset
     "eslint:recommended",
     // Apply the same rules to expressions in templates.
-+   "vue-preset/eslint:recommended"
++   "vue-preset/eslint/recommended"
   ]
 }
 ```

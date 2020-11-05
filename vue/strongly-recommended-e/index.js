@@ -5,12 +5,12 @@ const resolveExtendsRules = require("../../lib/resolve-extends-rules")
 
 module.exports = loadModule(
     "eslint-plugin-vue",
-    result => {
+    (result) => {
         const baseConfig = result.configs["strongly-recommended"]
 
         const rules = Object.assign(
             resolveExtendsRules(baseConfig),
-            baseConfig.rules
+            baseConfig.rules,
         )
 
         for (const name of Object.keys(rules)) {
@@ -21,5 +21,5 @@ module.exports = loadModule(
             rules,
         }
     },
-    () => require("./fallback")
+    () => require("./fallback"),
 )
