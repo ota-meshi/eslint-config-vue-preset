@@ -5,8 +5,8 @@ const buildVueRules = require("../lib/build-vue-rules")
 
 module.exports = loadModule(
     "eslint-config-google",
-    config => ({
+    (config) => ({
         rules: buildVueRules(config).vueRules,
     }),
-    () => require("./fallback")
+    () => require("./fallback"),
 )
