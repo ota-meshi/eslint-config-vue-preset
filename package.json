@@ -10,7 +10,7 @@
     "build": "node scripts/build-fallback-configs.js && npm run lint-fix",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "upgrade": "npm i -D eslint@latest eslint-plugin-vue@latest eslint-config-airbnb@latest eslint-config-standard@latest eslint-plugin-vue-libs@latest",
+    "upgrade": "npm i -D eslint@latest eslint-plugin-vue@latest eslint-config-airbnb@latest eslint-config-standard@latest eslint-plugin-vue-libs@latest --legacy-peer-deps",
     "check-unsupport-rules": "node scripts/check-unsupport-rules"
   },
   "repository": {
