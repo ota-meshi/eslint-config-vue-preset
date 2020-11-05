@@ -43,7 +43,7 @@ jobs:
     - name: Install Packages
       run: npm install
     - name: Test
-      run: npm run test:nyc
+      run: npm run test
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v1.1.1
       with:
