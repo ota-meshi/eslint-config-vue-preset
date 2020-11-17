@@ -18,6 +18,8 @@ module.exports = ${JSON.stringify(require(dir), null, 4)}`,
 // ruleset that changed the setting of rules provided by "plugin:vue/*" to `"error"`
 writeConfig("vue/recommended-e")
 writeConfig("vue/strongly-recommended-e")
+writeConfig("vue/vue3-recommended-e")
+writeConfig("vue/vue3-strongly-recommended-e")
 
 // ruleset for Vue template
 writeConfig("standard")
