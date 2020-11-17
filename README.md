@@ -40,9 +40,35 @@ module.exports = {
 
 ## :wrench: Preset Configs
 
+### `vue-preset/vue/vue3-recommended-e`
+
+It is ruleset that changed the setting of rules provided by [`"plugin:vue/vue3-recommended"`](https://eslint.vuejs.org/rules/#priority-c-recommended-minimizing-arbitrary-choices-and-cognitive-overhead-for-vue-js-3-x) to `"error"`.
+
+```diff
+{
+  "extends": [
+    "plugin:vue/base",
++    "vue-preset/vue/vue3-recommended-e"
+  ]
+}
+```
+
+### `vue-preset/vue/vue3-strongly-recommended-e`
+
+It is ruleset that changed the setting of rules provided by [`"plugin:vue/vue3-strongly-recommended"`](https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability-for-vue-js-3-x) to `"error"`.
+
+```diff
+{
+  "extends": [
+    "plugin:vue/base",
++    "vue-preset/vue/vue3-strongly-recommended-e"
+  ]
+}
+```
+
 ### `vue-preset/vue/recommended-e`
 
-It is ruleset that changed the setting of rules provided by [`"plugin:vue/recommended"`](https://eslint.vuejs.org/rules/#priority-c-recommended-minimizing-arbitrary-choices-and-cognitive-overhead) to `"error"`.
+It is ruleset that changed the setting of rules provided by [`"plugin:vue/recommended"`](https://eslint.vuejs.org/rules/#priority-c-recommended-minimizing-arbitrary-choices-and-cognitive-overhead-for-vue-js-2-x) to `"error"`.
 
 ```diff
 {
@@ -55,7 +81,7 @@ It is ruleset that changed the setting of rules provided by [`"plugin:vue/recomm
 
 ### `vue-preset/vue/strongly-recommended-e`
 
-It is ruleset that changed the setting of rules provided by [`"plugin:vue/strongly-recommended"`](https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability) to `"error"`.
+It is ruleset that changed the setting of rules provided by [`"plugin:vue/strongly-recommended"`](https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability-for-vue-js-2-x) to `"error"`.
 
 ```diff
 {
