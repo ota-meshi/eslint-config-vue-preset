@@ -58,7 +58,7 @@
     "eslint-plugin-vue-libs": "^4.0.0",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
-    "mocha": "^6.2.2",
+    "mocha": "^8.0.0",
     "nyc": "^14.1.1",
     "prettier": "^2.1.2"
   }
