@@ -2,6 +2,7 @@
 
 module.exports = {
     rules: {
+        "vue/no-constant-condition": "error",
         "vue/no-empty-pattern": "error",
         "vue/no-irregular-whitespace": "error",
         "vue/no-sparse-arrays": "error",

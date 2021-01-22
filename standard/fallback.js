@@ -73,6 +73,12 @@ module.exports = {
                 after: true,
             },
         ],
+        "vue/no-constant-condition": [
+            "error",
+            {
+                checkLoops: false,
+            },
+        ],
         "vue/no-empty-pattern": "error",
         "vue/no-extra-parens": ["error", "functions"],
         "vue/no-irregular-whitespace": "error",

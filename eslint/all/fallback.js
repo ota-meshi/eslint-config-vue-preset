@@ -18,6 +18,7 @@ module.exports = {
         "vue/key-spacing": "error",
         "vue/keyword-spacing": "error",
         "vue/max-len": "error",
+        "vue/no-constant-condition": "error",
         "vue/no-empty-pattern": "error",
         "vue/no-extra-parens": "error",
         "vue/no-irregular-whitespace": "error",
