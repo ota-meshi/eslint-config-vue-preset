@@ -57,12 +57,12 @@ describe("resolve-extends-rules", () => {
             )
         })
 
-        it("should be able to load 2", () => {
-            assert.deepStrictEqual(
-                resolveExtendsRules({ extends: "prettier/vue" }),
-                require("eslint-config-prettier/vue").rules,
-            )
-        })
+        // it("should be able to load 2", () => {
+        //     assert.deepStrictEqual(
+        //         resolveExtendsRules({ extends: "prettier/vue" }),
+        //         require("eslint-config-prettier/vue").rules,
+        //     )
+        // })
 
         it("should be able to load 3", () => {
             assert.deepStrictEqual(
