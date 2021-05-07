@@ -9,5 +9,10 @@
             "depTypeList": ["devDependencies"],
             "automerge": true
         }
-    ]
+    ],
+    "postUpgradeTasks": {
+        "commands": ["npx eslint --fix"],
+        "fileFilters": ["package.json", "package-lock.json"],
+        "executionMode": "update"
+    }
 }
