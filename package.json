@@ -33,14 +33,14 @@
         "node": ">=8"
     },
     "peerDependencies": {
-        "eslint": "7.30.0",
+        "eslint": "8.0.0",
         "eslint-plugin-vue": ">=7.5.0"
     },
     "devDependencies": {
         "@mysticatea/eslint-plugin": "^13.0.0",
         "@ota-meshi/eslint-plugin": "^0.7.0",
         "@vue/eslint-config-standard": "^6.0.0",
-        "eslint": "^7.18.0",
+        "eslint": "^8.0.0",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-config-google": "^0.14.0",
         "eslint-config-prettier": "^8.1.0",
