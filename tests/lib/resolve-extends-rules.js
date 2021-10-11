@@ -8,13 +8,13 @@ describe("resolve-extends-rules", () => {
         it("should be able to load 1", () => {
             assert.deepStrictEqual(
                 resolveExtendsRules({ extends: "eslint:recommended" }),
-                require("eslint/conf/eslint-recommended").rules,
+                require("../../lib/eslint-recommended").rules,
             )
         })
         it("should be able to load 2", () => {
             assert.deepStrictEqual(
                 resolveExtendsRules({ extends: "eslint:all" }),
-                require("eslint/conf/eslint-all").rules,
+                require("../../lib/eslint-all").rules,
             )
         })
     })
@@ -23,29 +23,6 @@ describe("resolve-extends-rules", () => {
             assert.deepStrictEqual(
                 resolveExtendsRules({ extends: "plugin:vue/base" }),
                 require("eslint-plugin-vue").configs.base.rules,
-            )
-        })
-
-        it("should be able to load 2", () => {
-            assert.deepStrictEqual(
-                resolveExtendsRules({ extends: "plugin:@mysticatea/es2015" }),
-                Object.assign(
-                    {},
-                    require("@mysticatea/eslint-plugin/lib/configs/_base")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-ts")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-vue")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-mocha")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-special")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_base")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-2015")
-                        .rules,
-                ),
             )
         })
     })
@@ -77,32 +54,6 @@ describe("resolve-extends-rules", () => {
             assert.deepStrictEqual(
                 resolveExtendsRules({ extends: "eslint-config-standard" }),
                 require("eslint-config-standard").rules,
-            )
-        })
-
-        it("should be able to load 2", () => {
-            assert.deepStrictEqual(
-                resolveExtendsRules({
-                    extends: "plugin:@mysticatea/eslint-plugin/es2015",
-                }),
-
-                Object.assign(
-                    {},
-                    require("@mysticatea/eslint-plugin/lib/configs/_base")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-ts")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-vue")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-mocha")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-special")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_base")
-                        .rules,
-                    require("@mysticatea/eslint-plugin/lib/configs/_override-2015")
-                        .rules,
-                ),
             )
         })
 
