@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-vue-preset",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "Provides various ESLint Shareable Configs for eslint-plugin-vue.",
     "main": "lib/index.js",
     "scripts": {
