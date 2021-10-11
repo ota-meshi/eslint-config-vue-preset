@@ -3,8 +3,8 @@
 module.exports = {
     rules: {
         "vue/comment-directive": "error",
-        "vue/experimental-script-setup-vars": "error",
         "vue/jsx-uses-vars": "error",
+        "vue/script-setup-uses-vars": "error",
         "vue/no-arrow-functions-in-watch": "error",
         "vue/no-async-in-computed-properties": "error",
         "vue/no-deprecated-data-object-declaration": "error",
