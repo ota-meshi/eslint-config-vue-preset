@@ -40,7 +40,7 @@
         "@ota-meshi/eslint-plugin": "^0.10.0",
         "@vue/eslint-config-standard": "^6.0.0",
         "eslint": "^8.0.0",
-        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-airbnb": "^19.0.0",
         "eslint-config-google": "^0.14.0",
         "eslint-config-prettier": "^8.1.0",
         "eslint-config-standard": "^16.0.3",
