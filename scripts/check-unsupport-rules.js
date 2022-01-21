@@ -17,6 +17,8 @@ const DONT_SUPPORT_RULES = {
     "unicode-bom": "This rule is not necessary for Vue templates.",
     "eol-last": "This rule is not necessary for Vue templates.",
     "jsx-quotes": "This rule is not necessary for Vue templates.",
+    "no-import-assign": "This rule is not necessary for Vue templates.",
+    "no-with": "This rule is not necessary for Vue templates.",
 
     // This rule already applies to the Vue template.
     "no-trailing-spaces": "This rule already applies to the Vue template.",
@@ -100,6 +102,10 @@ function highPriorityRules(rules) {
         // cond
         "no-cond-assign", // e.g. NG: `if (a = b) {`
         "no-constant-condition", // e.g. NG: `if (true) {`
+        "no-dupe-else-if",
+        "use-isnan",
+        "valid-typeof",
+        "yoda",
         // for
         "for-direction", // e.g. NG: `for (var i = 0; i < 10; i--) {`
         // class
@@ -107,43 +113,107 @@ function highPriorityRules(rules) {
         "no-class-assign",
         "no-dupe-class-members",
         "no-this-before-super",
-        // function declaration
+        "lines-between-class-members",
+        "no-useless-constructor",
+        // function
         "no-func-assign",
+        "no-dupe-args",
+        "no-caller",
+        "space-before-function-paren",
         // generator
         "require-yield",
+        "generator-star-spacing",
+        "yield-star-spacing",
         // getter setter
         "getter-return",
+        "no-setter-return",
         "accessor-pairs",
         // switch case
         "no-case-declarations",
         "no-duplicate-case",
         "no-fallthrough",
+        "default-case-last",
         // variables
         "no-const-assign",
         "no-delete-var",
         "no-redeclare",
+        "no-var",
+        "one-var",
+        "prefer-const",
         // assign
         "no-self-assign",
         // catch, finally
         "no-ex-assign",
         "no-unsafe-finally",
+        "no-useless-catch",
         // label
         "no-unused-labels",
+        "no-labels",
+        // regexp
+        "no-invalid-regexp",
+        "no-control-regex",
+        "no-useless-backreference",
+        "no-empty-character-class",
+        "no-misleading-character-class",
+        "no-regex-spaces",
+        "prefer-regex-literals",
+        // new
+        "new-cap",
+        "new-parens",
+        "no-new-symbol",
+        "no-new",
+        "no-new-func",
+        "no-new-object",
+        "no-new-wrappers",
+        // with function
+        "no-async-promise-executor",
+        "prefer-promise-reject-errors",
+        // statements
+        // - semi
+        "no-extra-semi",
+        "semi",
+        "semi-spacing",
+        // - block
+        "curly",
+        "no-empty",
+        "no-lone-blocks",
+        "padded-blocks",
+        "space-before-blocks",
+        // - declarations
+        "no-inner-declarations",
+        "no-use-before-define",
+        "no-shadow-restricted-names",
+        // - other
+        "no-extra-boolean-cast",
+        "no-unreachable",
+        "no-throw-literal",
+        // escapes
+        "no-nonoctal-decimal-escape",
+        "no-octal",
+        "no-useless-escape",
+        "no-octal-escape",
+        // multiline
+        "multiline-ternary",
+        "no-unexpected-multiline",
         // can not be used with Vue template
         "no-console",
         "no-debugger", // ?
         "no-global-assign",
         "no-undef",
-        // priority low
-        "no-new-symbol",
         "no-obj-calls",
-        "no-octal",
+        // priority low
+        "no-array-constructor",
+        "no-prototype-builtins",
+        "no-unsafe-negation",
+        "no-unsafe-optional-chaining",
+        "no-proto",
+        "symbol-description",
         // is rarely used
         "no-compare-neg-zero", // e.g. NG: `if (x === -0) {`
     ]
     const result = Object.assign({}, rules)
     for (const name of Object.keys(result)) {
-        if (ignores.includes(name)) {
+        if (ignores.includes(name) || DONT_SUPPORT_RULES[name]) {
             delete result[name]
         }
     }
@@ -176,7 +246,7 @@ ${rulesToJson(whitespaceRules(unsupports))}
 
 ## The rules I want to support.
 
-${rulesToJson(highPriorityRules(unsupports))}
+${rulesToMd(highPriorityRules(unsupports))}
 
 `,
         "utf8",
