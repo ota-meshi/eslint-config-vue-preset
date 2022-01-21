@@ -82,6 +82,7 @@ module.exports = {
         "vue/no-empty-pattern": "error",
         "vue/no-extra-parens": ["error", "functions"],
         "vue/no-irregular-whitespace": "error",
+        "vue/no-loss-of-precision": "error",
         "vue/no-multi-spaces": "error",
         "vue/no-sparse-arrays": "error",
         "vue/no-unused-vars": "error",
