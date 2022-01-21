@@ -22,6 +22,7 @@ module.exports = {
         "vue/no-empty-pattern": "error",
         "vue/no-extra-parens": "error",
         "vue/no-irregular-whitespace": "error",
+        "vue/no-loss-of-precision": "error",
         "vue/no-multi-spaces": "error",
         "vue/no-restricted-syntax": "error",
         "vue/no-sparse-arrays": "error",

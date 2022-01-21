@@ -183,8 +183,8 @@ ${rulesToJson(highPriorityRules(unsupports))}
     )
 }
 
-checkConfig("eslint/conf/eslint-all", "eslint/all")
-checkConfig("eslint/conf/eslint-recommended", "eslint/recommended")
+checkConfig("../lib/eslint-all.js", "eslint/all")
+checkConfig("../lib/eslint-recommended.js", "eslint/recommended")
 checkConfig("eslint-config-airbnb", "airbnb")
 checkConfig("eslint-config-standard", "standard")
 checkConfig("eslint-config-google", "google")
