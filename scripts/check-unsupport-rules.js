@@ -19,6 +19,7 @@ const DONT_SUPPORT_RULES = {
     "jsx-quotes": "This rule is not necessary for Vue templates.",
     "no-import-assign": "This rule is not necessary for Vue templates.",
     "no-with": "This rule is not necessary for Vue templates.",
+    "lines-around-directive": "This rule is not necessary for Vue templates.",
 
     // This rule already applies to the Vue template.
     "no-trailing-spaces": "This rule already applies to the Vue template.",
@@ -99,7 +100,7 @@ function layoutRules(rules) {
 
 function highPriorityRules(rules) {
     const ignores = [
-        // cond
+        // conditions
         "no-cond-assign", // e.g. NG: `if (a = b) {`
         "no-constant-condition", // e.g. NG: `if (true) {`
         "no-dupe-else-if",
@@ -108,6 +109,19 @@ function highPriorityRules(rules) {
         "yoda",
         // for
         "for-direction", // e.g. NG: `for (var i = 0; i < 10; i--) {`
+        // function
+        "no-func-assign",
+        "no-dupe-args",
+        "no-caller",
+        "space-before-function-paren",
+        "function-paren-newline",
+        // generator
+        "require-yield",
+        "generator-star-spacing",
+        "yield-star-spacing",
+        // with function
+        "no-async-promise-executor",
+        "prefer-promise-reject-errors",
         // class
         "constructor-super",
         "no-class-assign",
@@ -115,15 +129,6 @@ function highPriorityRules(rules) {
         "no-this-before-super",
         "lines-between-class-members",
         "no-useless-constructor",
-        // function
-        "no-func-assign",
-        "no-dupe-args",
-        "no-caller",
-        "space-before-function-paren",
-        // generator
-        "require-yield",
-        "generator-star-spacing",
-        "yield-star-spacing",
         // getter setter
         "getter-return",
         "no-setter-return",
@@ -133,6 +138,7 @@ function highPriorityRules(rules) {
         "no-duplicate-case",
         "no-fallthrough",
         "default-case-last",
+        "switch-colon-spacing",
         // variables
         "no-const-assign",
         "no-delete-var",
@@ -140,12 +146,13 @@ function highPriorityRules(rules) {
         "no-var",
         "one-var",
         "prefer-const",
-        // assign
-        "no-self-assign",
         // catch, finally
         "no-ex-assign",
         "no-unsafe-finally",
         "no-useless-catch",
+        // assign
+        "no-self-assign",
+        "prefer-destructuring",
         // label
         "no-unused-labels",
         "no-labels",
@@ -165,25 +172,23 @@ function highPriorityRules(rules) {
         "no-new-func",
         "no-new-object",
         "no-new-wrappers",
-        // with function
-        "no-async-promise-executor",
-        "prefer-promise-reject-errors",
-        // statements
-        // - semi
+        // semi
         "no-extra-semi",
         "semi",
         "semi-spacing",
-        // - block
+        "semi-style",
+        // block
         "curly",
         "no-empty",
         "no-lone-blocks",
         "padded-blocks",
         "space-before-blocks",
-        // - declarations
+        "nonblock-statement-body-position",
+        // with declarations
         "no-inner-declarations",
         "no-use-before-define",
         "no-shadow-restricted-names",
-        // - other
+        // with statements
         "no-extra-boolean-cast",
         "no-unreachable",
         "no-throw-literal",
@@ -221,32 +226,41 @@ function highPriorityRules(rules) {
 }
 
 function checkConfig(moduleName, name) {
-    const unsupports = buildVueRules(require(moduleName)).unsupports
+    const unsupported = buildVueRules(require(moduleName)).unsupported
     const dir = path.resolve(__dirname, "../", name)
     fs.mkdirsSync(dir)
     fs.writeFileSync(
-        path.resolve(dir, "unsupports.md"),
+        path.resolve(dir, "unsupported.md"),
         `# ESLint rules in \`"${name}"\` unsupported by vue
 
 ## All rules
 
-${rulesToMd(unsupports)}
+
+${rulesToMd(unsupported)}
 
 ## fixable
 
-${rulesToJson(fixableRules(unsupports))}
+${rulesToJson(fixableRules(unsupported))}
 
 ## layout
 
-${rulesToJson(layoutRules(unsupports))}
+${rulesToJson(layoutRules(unsupported))}
 
 ## whitespace
 
-${rulesToJson(whitespaceRules(unsupports))}
+${rulesToJson(whitespaceRules(unsupported))}
 
 ## The rules I want to support.
 
-${rulesToMd(highPriorityRules(unsupports))}
+${rulesToMd(highPriorityRules(unsupported))}
+
+- layout
+
+${rulesToMd(layoutRules(highPriorityRules(unsupported)))}
+
+- fixable
+
+${rulesToMd(fixableRules(highPriorityRules(unsupported)))}
 
 `,
         "utf8",

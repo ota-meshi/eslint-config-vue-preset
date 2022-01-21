@@ -5,4 +5,4 @@ coverage/
 .eslintignore
 .eslintrc.js
 .travis.yml
-**/unsupports.md
+**/unsupported.md
