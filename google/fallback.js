@@ -31,5 +31,6 @@ module.exports = {
         ],
         "vue/object-curly-spacing": 2,
         "vue/operator-linebreak": [2, "after"],
+        "vue/quote-props": [2, "consistent"],
     },
 }
