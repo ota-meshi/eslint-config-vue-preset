@@ -177,6 +177,15 @@ module.exports = {
                 },
             },
         ],
+        "vue/quote-props": [
+            "error",
+            "as-needed",
+            {
+                keywords: false,
+                unnecessary: true,
+                numbers: false,
+            },
+        ],
         "vue/space-in-parens": ["error", "never"],
         "vue/space-infix-ops": "error",
         "vue/space-unary-ops": [
@@ -193,6 +202,14 @@ module.exports = {
             {
                 before: true,
                 after: true,
+            },
+        ],
+        "vue/object-shorthand": [
+            "error",
+            "always",
+            {
+                ignoreConstructors: false,
+                avoidQuotes: true,
             },
         ],
         "vue/prefer-template": "error",

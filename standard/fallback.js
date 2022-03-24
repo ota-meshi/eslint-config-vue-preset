@@ -111,6 +111,7 @@ module.exports = {
                 },
             },
         ],
+        "vue/quote-props": ["error", "as-needed"],
         "vue/space-in-parens": ["error", "never"],
         "vue/space-infix-ops": "error",
         "vue/space-unary-ops": [
