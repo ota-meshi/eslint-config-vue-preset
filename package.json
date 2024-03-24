@@ -37,7 +37,9 @@
         "eslint-plugin-vue": ">=7.13.0"
     },
     "devDependencies": {
+        "@changesets/cli": "^2.26.2",
         "@ota-meshi/eslint-plugin": "^0.10.0",
+        "@svitejs/changesets-changelog-github-compact": "^1.1.0",
         "@vue/eslint-config-standard": "^6.0.0",
         "eslint": "^8.11.0",
         "eslint-config-airbnb": "^19.0.4",
@@ -63,5 +65,8 @@
         "mocha": "^9.0.0",
         "nyc": "^15.0.0",
         "prettier": "^2.4.1"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
