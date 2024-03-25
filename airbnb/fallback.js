@@ -19,6 +19,7 @@ module.exports = {
         "vue/no-empty-pattern": "error",
         "vue/no-multi-spaces": "error",
         "vue/no-useless-concat": "error",
+        "vue/no-console": "warn",
         "vue/no-constant-condition": "warn",
         "vue/no-irregular-whitespace": "error",
         "vue/no-loss-of-precision": "error",

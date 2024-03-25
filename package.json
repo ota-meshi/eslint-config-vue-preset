@@ -30,7 +30,7 @@
     },
     "homepage": "https://github.com/ota-meshi/eslint-config-vue-preset#readme",
     "engines": {
-        "node": ">=12"
+        "node": ">=14"
     },
     "peerDependencies": {
         "eslint": ">=7.30.0",
@@ -41,11 +41,11 @@
         "@ota-meshi/eslint-plugin": "^0.10.0",
         "@svitejs/changesets-changelog-github-compact": "^1.1.0",
         "@vue/eslint-config-standard": "^6.0.0",
-        "eslint": "^8.11.0",
+        "eslint": "^8.57.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-google": "^0.14.0",
         "eslint-config-prettier": "^8.1.0",
-        "eslint-config-standard": "^16.0.3",
+        "eslint-config-standard": "^17.1.0",
         "eslint-plugin-eslint-comments": "^3.2.0",
         "eslint-plugin-import": "^2.20.2",
         "eslint-plugin-json-schema-validator": "^2.1.38",
@@ -58,7 +58,7 @@
         "eslint-plugin-react-hooks": "^4.0.2",
         "eslint-plugin-regexp": "^1.0.0",
         "eslint-plugin-standard": "^4.0.1",
-        "eslint-plugin-vue": "^8.5.0",
+        "eslint-plugin-vue": "^9.23.0",
         "eslint-plugin-vue-libs": "^4.0.0",
         "fs-extra": "^10.0.0",
         "glob": "^8.0.0",
