@@ -1,12 +1,12 @@
-"use strict"
+"use strict";
 
-const loadModule = require("../lib/load-module")
-const buildVueRules = require("../lib/build-vue-rules")
+const loadModule = require("../lib/load-module");
+const buildVueRules = require("../lib/build-vue-rules");
 
 module.exports = loadModule(
-    "eslint-config-standard",
-    (config) => ({
-        rules: buildVueRules(config).vueRules,
-    }),
-    () => require("./fallback"),
-)
+  "eslint-config-standard",
+  (config) => ({
+    rules: buildVueRules(config).vueRules,
+  }),
+  () => require("./fallback")
+);
