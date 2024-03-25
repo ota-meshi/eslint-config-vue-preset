@@ -1,21 +1,21 @@
 {
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "html",
-        "vue",
-        "json",
-        "jsonc"
-    ],
-    "typescript.validate.enable": false,
-    "javascript.validate.enable": false,
-    "eslint.workingDirectories": ["./", "./docs/.vuepress"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue",
+    "json",
+    "jsonc"
+  ],
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "eslint.workingDirectories": ["./", "./docs/.vuepress"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[html]": {
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
-    "[html]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": "never"
-        }
+      "source.fixAll.eslint": "never"
     }
+  }
 }
