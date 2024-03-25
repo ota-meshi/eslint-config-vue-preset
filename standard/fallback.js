@@ -2,6 +2,7 @@
 
 module.exports = {
     rules: {
+        "vue/object-shorthand": ["warn", "properties"],
         "vue/array-bracket-spacing": ["error", "never"],
         "vue/arrow-spacing": [
             "error",
@@ -73,6 +74,7 @@ module.exports = {
                 after: true,
             },
         ],
+        "vue/multiline-ternary": ["error", "always-multiline"],
         "vue/no-constant-condition": [
             "error",
             {

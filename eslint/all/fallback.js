@@ -5,6 +5,7 @@ module.exports = {
         "vue/camelcase": "error",
         "vue/dot-notation": "error",
         "vue/eqeqeq": "error",
+        "vue/no-console": "error",
         "vue/no-constant-condition": "error",
         "vue/no-empty-pattern": "error",
         "vue/no-irregular-whitespace": "error",
