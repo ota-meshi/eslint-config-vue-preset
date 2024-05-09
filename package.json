@@ -41,7 +41,7 @@
     "@ota-meshi/eslint-plugin": "^0.15.0",
     "@svitejs/changesets-changelog-github-compact": "^1.1.0",
     "@vue/eslint-config-standard": "^8.0.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^9.0.0",
