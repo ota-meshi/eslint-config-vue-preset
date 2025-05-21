@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "upgrade": "npm i -D eslint-plugin-vue@latest eslint-config-airbnb@latest eslint-config-standard@latest eslint-config-google@latest eslint-plugin-vue-libs@latest --legacy-peer-deps",
-    "check-unsupport-rules": "node scripts/check-unsupport-rules"
+    "check-unsupport-rules": "node scripts/check-unsupport-rules",
+    "release": "changeset publish"
   },
   "repository": {
     "type": "git",
