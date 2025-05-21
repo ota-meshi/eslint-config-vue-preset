@@ -6,7 +6,9 @@ const resolveExtendsRules = require("../../lib/resolve-extends-rules");
 module.exports = loadModule(
   "eslint-plugin-vue",
   (result) => {
-    const baseConfig = result.configs["vue3-strongly-recommended"];
+    const baseConfig =
+      result.configs["vue3-strongly-recommended"] ||
+      result.configs["strongly-recommended"];
 
     const rules = Object.assign(
       resolveExtendsRules(baseConfig),
