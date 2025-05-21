@@ -12,7 +12,7 @@ module.exports = loadModule(
 
     const rules = Object.assign(
       resolveExtendsRules(baseConfig),
-      baseConfig.rules
+      baseConfig.rules,
     );
 
     for (const name of Object.keys(rules)) {
@@ -23,5 +23,5 @@ module.exports = loadModule(
       rules,
     };
   },
-  () => require("./fallback")
+  () => require("./fallback"),
 );

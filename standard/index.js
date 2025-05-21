@@ -8,5 +8,5 @@ module.exports = loadModule(
   (config) => ({
     rules: buildVueRules(config).vueRules,
   }),
-  () => require("./fallback")
+  () => require("./fallback"),
 );
