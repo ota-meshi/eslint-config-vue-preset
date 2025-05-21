@@ -16,7 +16,7 @@ describe("build-vue-rules", () => {
       it("should be match", () => {
         assert.deepStrictEqual(
           require(filePath),
-          require(path.dirname(filePath))
+          require(path.dirname(filePath)),
         );
       });
     });

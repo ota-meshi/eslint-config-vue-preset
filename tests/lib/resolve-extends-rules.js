@@ -8,13 +8,13 @@ describe("resolve-extends-rules", () => {
     it("should be able to load 1", () => {
       assert.deepStrictEqual(
         resolveExtendsRules({ extends: "eslint:recommended" }),
-        require("../../lib/eslint-recommended").rules
+        require("../../lib/eslint-recommended").rules,
       );
     });
     it("should be able to load 2", () => {
       assert.deepStrictEqual(
         resolveExtendsRules({ extends: "eslint:all" }),
-        require("../../lib/eslint-all").rules
+        require("../../lib/eslint-all").rules,
       );
     });
   });
@@ -22,7 +22,7 @@ describe("resolve-extends-rules", () => {
     it("should be able to load 1", () => {
       assert.deepStrictEqual(
         resolveExtendsRules({ extends: "plugin:vue/base" }),
-        require("eslint-plugin-vue").configs.base.rules
+        require("eslint-plugin-vue").configs.base.rules,
       );
     });
   });
@@ -30,7 +30,7 @@ describe("resolve-extends-rules", () => {
     it("should be able to load 1", () => {
       assert.deepStrictEqual(
         resolveExtendsRules({ extends: "standard" }),
-        require("eslint-config-standard").rules
+        require("eslint-config-standard").rules,
       );
     });
 
@@ -44,7 +44,7 @@ describe("resolve-extends-rules", () => {
     it("should be able to load 3", () => {
       assert.deepStrictEqual(
         resolveExtendsRules({ extends: "@vue/standard" }),
-        require(require("@vue/eslint-config-standard").extends[0]).rules
+        require(require("@vue/eslint-config-standard").extends[0]).rules,
       );
     });
   });
@@ -52,14 +52,14 @@ describe("resolve-extends-rules", () => {
     it("should be able to load 1", () => {
       assert.deepStrictEqual(
         resolveExtendsRules({ extends: "eslint-config-standard" }),
-        require("eslint-config-standard").rules
+        require("eslint-config-standard").rules,
       );
     });
 
     it("should be able to load 3", () => {
       assert.deepStrictEqual(
         resolveExtendsRules({ extends: "@vue/eslint-config-standard" }),
-        require(require("@vue/eslint-config-standard").extends[0]).rules
+        require(require("@vue/eslint-config-standard").extends[0]).rules,
       );
     });
   });

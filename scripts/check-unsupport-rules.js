@@ -262,7 +262,7 @@ ${rulesToMd(layoutRules(highPriorityRules(unsupported)))}
 ${rulesToMd(fixableRules(highPriorityRules(unsupported)))}
 
 `,
-    "utf8"
+    "utf8",
   );
 }
 

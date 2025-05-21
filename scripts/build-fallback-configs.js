@@ -11,7 +11,7 @@ function writeConfig(name) {
     `"use strict"
 
 module.exports = ${JSON.stringify(require(dir), null, 4)}`,
-    "utf8"
+    "utf8",
   );
 }
 
