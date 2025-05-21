@@ -53,7 +53,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-n": "^17.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-promise": "^7.0.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-regexp": "^2.0.0",
