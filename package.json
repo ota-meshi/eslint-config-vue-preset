@@ -50,7 +50,7 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-json-schema-validator": "^5.0.0",
-    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint-plugin-jsonc": "^3.0.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-n": "^17.0.0",
     "eslint-plugin-prettier": "^5.0.0",
